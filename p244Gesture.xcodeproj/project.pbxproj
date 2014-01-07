@@ -21,6 +21,7 @@
 		00C1CE9D187BC3A8003D4C1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C1CE7F187BC3A8003D4C1E /* UIKit.framework */; };
 		00C1CEA5187BC3A8003D4C1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00C1CEA3187BC3A8003D4C1E /* InfoPlist.strings */; };
 		00C1CEA7187BC3A8003D4C1E /* p244GestureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C1CEA6187BC3A8003D4C1E /* p244GestureTests.m */; };
+		00C1CEB1187BC3B2003D4C1E /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C1CEB0187BC3B2003D4C1E /* apple.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		00C1CEA2187BC3A8003D4C1E /* p244GestureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "p244GestureTests-Info.plist"; sourceTree = "<group>"; };
 		00C1CEA4187BC3A8003D4C1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00C1CEA6187BC3A8003D4C1E /* p244GestureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = p244GestureTests.m; sourceTree = "<group>"; };
+		00C1CEB0187BC3B2003D4C1E /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		00C1CE81187BC3A8003D4C1E /* p244Gesture */ = {
 			isa = PBXGroup;
 			children = (
+				00C1CEB0187BC3B2003D4C1E /* apple.png */,
 				00C1CE8A187BC3A8003D4C1E /* AppDelegate.h */,
 				00C1CE8B187BC3A8003D4C1E /* AppDelegate.m */,
 				00C1CE8D187BC3A8003D4C1E /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			files = (
 				00C1CE94187BC3A8003D4C1E /* Images.xcassets in Resources */,
 				00C1CE86187BC3A8003D4C1E /* InfoPlist.strings in Resources */,
+				00C1CEB1187BC3B2003D4C1E /* apple.png in Resources */,
 				00C1CE8F187BC3A8003D4C1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

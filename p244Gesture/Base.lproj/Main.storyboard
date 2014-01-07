@@ -1,23 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.png" id="tKI-Te-Yz5">
+                                <rect key="frame" x="104" y="231" width="112" height="106"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="7s9-qv-aWH" appends="YES" id="MLN-26-zy2"/>
+                            <outletCollection property="gestureRecognizers" destination="7Vt-uY-1Em" appends="YES" id="jhs-n4-BZW"/>
+                            <outletCollection property="gestureRecognizers" destination="TMo-lG-4Q2" appends="YES" id="hAf-em-F9E"/>
+                            <outletCollection property="gestureRecognizers" destination="W8I-YN-tDd" appends="YES" id="O8p-X3-mOs"/>
+                            <outletCollection property="gestureRecognizers" destination="Dbz-i3-WIw" appends="YES" id="sF2-Vu-Jsh"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="appleImage" destination="tKI-Te-Yz5" id="1ka-zT-FD8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7s9-qv-aWH"/>
+                <pinchGestureRecognizer id="7Vt-uY-1Em">
+                    <connections>
+                        <action selector="handlePinch:" destination="vXZ-lx-hvc" id="Sza-KJ-Nv3"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="TMo-lG-4Q2">
+                    <connections>
+                        <action selector="handleRoate:" destination="vXZ-lx-hvc" id="kUq-Af-vi2"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="W8I-YN-tDd">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="s9M-P6-p2D"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Dbz-i3-WIw"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="apple.png" width="550" height="550"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
